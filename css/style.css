@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    min-width: 1080px;
+    max-width: 100%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+main{
+    margin: 30px auto;
+    width: 815px;
+    display: flex;
+    justify-content: space-between;
+}
+.conteiner{ 
+    height: 635px;
+    width: 465px;
+}
+div.right{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.previa-app{
+    background: url(../imagem/fundo.png) no-repeat;
+}
+.previa-app img{
+    position: absolute;
+    margin-top: 26px;
+    margin-left: 156px;
+    visibility: visible;
+    opacity: 0;
+}
+.previa-app img.frame-previa{
+    opacity:1;
+    -webkit-transition:opacity 1.5s ease-in;
+    transition:opacity 1.5s ease-in;
+    z-index:2
+}
+.previa-app img.frame-previa-fim{
+    opacity:0;
+    -webkit-transition:opacity 1.5s ease-out;
+    transition:opacity 1.5s ease-out;
+    visibility: visible;
+}
+.conteiner .caixa{
+    border: 1px solid rgb(219, 219, 219,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.conteiner .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner .logo img{
+    margin: 36px auto 26px;
+}
+.conteiner .foto-perfil img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    display: block;
+    border: solid 1px #efefef;
+    margin: 0px auto 10px;
+}
+.conteiner button{
+    background: 0 0;
+    cursor: pointer;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 9px;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: inherit;
+    user-select: none;
+    width: auto;
+    color: rgba(0,149,246,1);
+    display: inline-block;
+}
+.botao-continuar button{
+    background-color: rgba(0,149,246,1);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    width: 100%;
+}
+.conteiner .botao-continuar{
+    width: 74%;
+    margin: 10px auto 16px;
+    display: flex;
+}
+.conteiner .trocar-conta{
+    padding: 0 40px;
+    margin: 12px 0 24px;
+    font-size: 14px;
+}
+.conteiner .pegue-app p{
+    color: #262626;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+}
+.conteiner .pegue-app .icone{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+}
+.conteiner .pegue-app .icone img{
+    height: 40px;
+    margin-right: 8px;
+    margin-top: 10px;
+}
+.conteiner .pegue-app{
+    margin-top: 10px;
+}
